@@ -1,12 +1,12 @@
 "use client"
 
 import React from 'react';
-import { determinerClientLivraisonRapide } from '../utils/algo';
+import { firstClient } from '../utils/algo';
 
 const Algo: React.FC = () => {
   const executeLivraisonClient = async () => {
     try {
-      const clientLivraisonRapide = await determinerClientLivraisonRapide();
+      const clientLivraisonRapide = await firstClient();
       console.log(`Le client qui peut recevoir sa commande est : ${clientLivraisonRapide}`);
     } catch (error) {
       console.error('Erreur lors de l\'exécution de l\'algorithme :', error);
