@@ -18,3 +18,5 @@ pnpm dev
 bun dev
 ```
 # Don't forget to modify your .env
+
+# All info in "Rendu Test Technique.docx"
